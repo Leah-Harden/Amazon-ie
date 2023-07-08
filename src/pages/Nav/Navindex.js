@@ -1,6 +1,6 @@
 
-import Navbar from '.Navbar.js'
-import BottomNav from '.BottomNav.js'
+import Navbar from './Navbar.js'
+import BottomNav from './BottomNav.js'
 
 
 

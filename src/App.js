@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //adds CSS
+import './Reset.css';
 import './App.css';
 
 

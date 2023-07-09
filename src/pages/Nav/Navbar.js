@@ -18,43 +18,44 @@ function Nav() {
     const handleChange = (event) => {
         setAge(event.target.value);
     };
+
+
     return (
         <>
-            <div>
-                <img></img>
-                <Button variant="text">Text</Button>
-                <div>
+            <div className='Navbar'>
+                <img src='../PhotosHome/Logo.png' alt="Logo" />
+                <Button><p className='ColButton'>
+                    Deliver to <span>John</span> <h6>Olrando 32809</h6>
+                </p>
+                </Button>
 
-                    <Box sx={{ minWidth: 120 }}>
-                        <FormControl fullWidth>
-                            <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                            <Select
-                                labelId="demo-simple-select-label"
-                                id="demo-simple-select"
-                                value={age}
 
-                                onChange={handleChange}
-                            >
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
-                    </Box>
+                <div className='SearchBarNavAll'>
+
+                    <FormControl className='AllSearchBar'>
+                        <InputLabel >All</InputLabel>
+                        <Select value={age}
+
+                            onChange={handleChange}
+                        >
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                        </Select>
+                    </FormControl>
 
                     <Autocomplete
                         disablePortal
-                        id="combo-box-demo"
                         options={options}
-                        sx={{ width: 300 }}
+                        className='SearchBarNav'
                         renderInput={(params) => <TextField {...params} />}
                     />
                     <div>
 
-                        <Button variant="text">EN</Button>
-                        <Button variant="text">Hello, John <h6>Account & Lists</h6></Button>
-                        <Button variant="text">Returns<h6>& Orders</h6></Button>
-                        <Button variant="text"><h6>Cart</h6></Button>
+                        <Button >EN</Button>
+                        <Button >Hello, John <h6>Account & Lists</h6></Button>
+                        <Button >Returns<h6>& Orders</h6></Button>
+                        <Button ><h6>Cart</h6></Button>
                     </div>
                 </div>
             </div>

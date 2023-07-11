@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.rowLocation {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
 .Navbar {
   background-color: #131921;
   display: flex;
@@ -26,6 +35,15 @@
   background-color: #f3f3f3;
   box-shadow: none;
 }
+
+.SearchBarNavBtn {
+  background-color: #131921;
+  border: none;
+  color: white;
+}
+
+
+
 
 .SearchBarNav {
   background-color: white;

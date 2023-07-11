@@ -10,6 +10,8 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Button from '@mui/material/Button';
 
+import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
+
 function Nav() {
     const options = ['The Godfather', 'Pulp Fiction'];
 
@@ -24,10 +26,12 @@ function Nav() {
         <>
             <div className='Navbar'>
                 <img src='../PhotosHome/Logo.png' alt="Logo" />
-                <Button><p className='ColButton'>
-                    Deliver to <span>John</span> <h6>Olrando 32809</h6>
-                </p>
-                </Button>
+                <button className='SearchBarNavBtn rowLocation'>
+                    <PinDropOutlinedIcon />
+                    <p className='ColButton'>
+                        Deliver to <span>John</span> <h6>Olrando 32809</h6>
+                    </p>
+                </button>
 
 
                 <div className='SearchBarNavAll'>

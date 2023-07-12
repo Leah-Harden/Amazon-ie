@@ -9,6 +9,11 @@
 
 
 
+.Logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
 
 
 .Navbar {
@@ -34,6 +39,8 @@
 .AllSearchBar {
   background-color: #f3f3f3;
   box-shadow: none;
+  margin: 10px 4px 10px 3px;
+  height: 60px;
 }
 
 .SearchBarNavBtn {
@@ -44,6 +51,29 @@
 
 
 
+.dropdown-container {
+  text-align: left;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 5px;
+}
+
+.dropdown-input {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.InputLNav {
+  background-color: #f3f3f3;
+  height: 40px;
+  margin: 0;
+  padding-left: 5px;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+}
 
 .SearchBarNav {
   background-color: white;

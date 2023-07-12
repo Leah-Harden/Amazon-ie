@@ -1,16 +1,20 @@
 
 import * as React from 'react';
 
-import Box from '@mui/material/Box';
+
 import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import TextField from '@mui/material/TextField';
+
 import Autocomplete from '@mui/material/Autocomplete';
-import Button from '@mui/material/Button';
+
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import MenuItem from '@mui/material/MenuItem';
 
 import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
+
+import Logo from './NavPhotos/Logo.png'
 
 function Nav() {
     const options = ['The Godfather', 'Pulp Fiction'];
@@ -22,10 +26,28 @@ function Nav() {
     };
 
 
+    const currencies = [
+        {
+            value: 'EUR',
+            label: 'All',
+        },
+        {
+            value: 'USD',
+            label: '$',
+        },
+        {
+            value: 'BTC',
+            label: '฿',
+        },
+        {
+            value: 'JPY',
+            label: '¥',
+        },
+    ];
     return (
         <>
             <div className='Navbar'>
-                <img src='../PhotosHome/Logo.png' alt="Logo" />
+                <img src={Logo} alt="Logo" className='Logo' />
                 <button className='SearchBarNavBtn rowLocation'>
                     <PinDropOutlinedIcon />
                     <p className='ColButton'>
@@ -37,15 +59,20 @@ function Nav() {
                 <div className='SearchBarNavAll'>
 
                     <FormControl className='AllSearchBar'>
-                        <InputLabel >All</InputLabel>
-                        <Select value={age}
-
-                            onChange={handleChange}
+                        <TextField
+                            id="outlined-select-currency"
+                            select
+                            defaultValue="EUR"
+                            helperText=""
+                            className=''
                         >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                        </Select>
+                            {currencies.map((option) => (
+                                <MenuItem key={option.value} value={option.value}>
+                                    {option.label}
+                                </MenuItem>
+                            ))}
+                        </TextField>
+
                     </FormControl>
 
                     <Autocomplete
@@ -56,10 +83,10 @@ function Nav() {
                     />
                     <div>
 
-                        <Button >EN</Button>
-                        <Button >Hello, John <h6>Account & Lists</h6></Button>
-                        <Button >Returns<h6>& Orders</h6></Button>
-                        <Button ><h6>Cart</h6></Button>
+                        <button className='SearchBarNavBtn '>EN</button>
+                        <button className='SearchBarNavBtn' >Hello, John <h6>Account & Lists</h6></button>
+                        <button className='SearchBarNavBtn '>Returns<h6>& Orders</h6></button>
+                        <button className='SearchBarNavBtn ' ><h6>Cart</h6></button>
                     </div>
                 </div>
             </div>

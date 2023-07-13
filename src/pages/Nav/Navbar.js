@@ -13,18 +13,13 @@ import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
 import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
+import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 import Logo from './NavPhotos/Logo.png'
 
 function Nav() {
     const options = ['The Godfather', 'Pulp Fiction'];
-
-
-    const [age, setAge] = React.useState('');
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
-
 
     const currencies = [
         {
@@ -64,7 +59,7 @@ function Nav() {
                             select
                             defaultValue="EUR"
                             helperText=""
-                            className=''
+                            className='InputLNav'
                         >
                             {currencies.map((option) => (
                                 <MenuItem key={option.value} value={option.value}>
@@ -74,21 +69,19 @@ function Nav() {
                         </TextField>
 
                     </FormControl>
-
                     <Autocomplete
                         disablePortal
                         options={options}
                         className='SearchBarNav'
                         renderInput={(params) => <TextField {...params} />}
                     />
-                    <div>
-
-                        <button className='SearchBarNavBtn '>EN</button>
-                        <button className='SearchBarNavBtn' >Hello, John <h6>Account & Lists</h6></button>
-                        <button className='SearchBarNavBtn '>Returns<h6>& Orders</h6></button>
-                        <button className='SearchBarNavBtn ' ><h6>Cart</h6></button>
-                    </div>
                 </div>
+
+                <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>
+                <button className='SearchBarNavBtn' >Hello, John <h6 className='btnBold'>Account & Lists</h6></button>
+                <button className='SearchBarNavBtn '>Returns<h6 className='btnBold'>& Orders</h6></button>
+                <button className='SearchBarNavBtn ' ><h6 className='btnBold'>< ShoppingCartOutlinedIcon />Cart</h6></button>
+
             </div>
 
         </>

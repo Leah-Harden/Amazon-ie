@@ -12,13 +12,16 @@
 .Logo {
   height: 50px;
   display: flex;
-  align-items: center;
+
 }
 
 
 .Navbar {
   background-color: #131921;
   display: flex;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+  align-items: center;
 }
 
 .ColButton {
@@ -27,26 +30,22 @@
 
 .SearchBarNavAll {
   display: flex;
+  justify-content: center;
   margin: 10px 4px 10px 3px;
-  height: 60px;
-  width: auto;
+  height: 50px;
+
   flex: 1 1 auto;
-  display: flex;
-  position: static;
-  float: none;
+
+
+  border-radius: 10px;
 }
 
-.AllSearchBar {
-  background-color: #f3f3f3;
-  box-shadow: none;
-  margin: 10px 4px 10px 3px;
-  height: 60px;
-}
 
 .SearchBarNavBtn {
   background-color: #131921;
   border: none;
   color: white;
+  padding: 12px;
 }
 
 
@@ -66,6 +65,13 @@
   user-select: none;
 }
 
+.AllSearchBar {
+  justify-content: center;
+  box-shadow: none;
+  padding: 10px 4px 10px 3px;
+
+}
+
 .InputLNav {
   background-color: #f3f3f3;
   height: 40px;
@@ -78,12 +84,12 @@
 .SearchBarNav {
   background-color: white;
   color: #111;
-  display: flex;
-  position: static;
-  float: none;
   width: 100%;
   line-height: 15px;
-  margin: 7px 10px 10px 0;
+
+
+
+  padding: 0px 10px 10px 0px;
   border: 0;
   height: 38px;
   font-family: inherit;
@@ -91,8 +97,15 @@
   outline: 0;
   box-shadow: none;
   text-indent: 8px;
-  direction: ltr;
+
 }
+
+.btnBold {
+  font-weight: 700;
+}
+
+
+
 
 
 .App-link {

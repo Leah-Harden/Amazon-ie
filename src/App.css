@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  font-family: 'Rubik', sans-serif;
+
 }
 
 .rowLocation {
   display: flex;
   align-items: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 
@@ -104,8 +107,42 @@
   font-weight: 700;
 }
 
+/* BottomNav */
+.rowbottomNav {
+  display: flex;
+  flex-direction: row;
+
+}
 
 
+.AllIconBtn {
+  width: 10px;
+  font-size: small;
+  margin-right: 5px;
+
+}
+
+.AllBtnBottomNav {
+  display: flex;
+
+  align-items: center;
+  background-color: #232f3e;
+  border: none;
+  color: white;
+  padding: 5px 18px 5px 18px;
+}
+
+
+.BtnBottomNav {
+  background-color: #232f3e;
+  color: white;
+  border: none;
+
+  padding: 10px 11px 10px 11px;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+
+}
 
 
 .App-link {

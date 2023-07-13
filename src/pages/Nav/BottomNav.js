@@ -1,34 +1,36 @@
 
-import Button from '@mui/material/Button';
 
-
+import DehazeIcon from '@mui/icons-material/Dehaze';
 
 function Nav() {
 
     return (
         <>
-            <div>All</div>
-            <div>
+            <div className='rowbottomNav'>
 
-                <Button size="small">Clinic</Button>
-                <Button size="small">Amazon Basics</Button>
-                <Button size="small">Buy Again</Button>
-                <Button size="small">Prime</Button>
-                <Button size="small">Groceries</Button>
-                <Button size="small">Pharmacy</Button>
-                <Button size="small">Groceries</Button>
-                <Button size="small">Pet Supplies</Button>
-                <Button size="small">Coupons</Button>
-                <Button size="small">Beauty & Personal Care</Button>
-                <Button size="small">Health & Household</Button>
-                <Button size="small">Shop By Interest</Button>
-                <Button size="small">Home Improvement</Button>
-                <Button size="small">Amazon Home</Button>
-                <Button size="small">Find a Gift</Button>
-                <Button size="small">Handmade</Button>
+                <button className='AllBtnBottomNav'> <DehazeIcon className='AllIconBtn' />All</button>
+                <div className=''>
+
+                    <button size="small" className='BtnBottomNav'>Clinic</button>
+                    <button size="small" className='BtnBottomNav'>Amazon Basics</button>
+                    <button size="small" className='BtnBottomNav'>Buy Again</button>
+                    <button size="small" className='BtnBottomNav'>Prime</button>
+                    <button size="small" className='BtnBottomNav'>Groceries</button>
+                    <button size="small" className='BtnBottomNav'>Pharmacy</button>
+
+                    <button size="small" className='BtnBottomNav'>Pet Supplies</button>
+                    <button size="small" className='BtnBottomNav'>Coupons</button>
+                    <button size="small" className='BtnBottomNav'>Beauty & Personal Care</button>
+                    <button size="small" className='BtnBottomNav'>Health & Household</button>
+                    <button size="small" className='BtnBottomNav'>Shop By Interest</button>
+                    <button size="small" className='BtnBottomNav'>Home Improvement</button>
+                    <button size="small" className='BtnBottomNav'>Amazon Home</button>
+                    <button size="small" className='BtnBottomNav'>Find a Gift</button>
+                    <button size="small" className='BtnBottomNav'>Handmade</button>
+
+                </div>
 
             </div>
-
 
         </>
 

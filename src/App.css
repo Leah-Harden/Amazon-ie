@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Rubik', sans-serif;
-
+  background-color: #e3e6e6;
 }
 
 .rowLocation {
@@ -143,6 +143,40 @@
   font-family: 'Rubik', sans-serif;
 
 }
+
+
+
+
+
+
+
+
+.homePageWidth {
+  margin-left: 200px;
+  width: 70%;
+}
+
+
+
+/* card */
+
+.cardTitle {
+  font-weight: 700;
+  float: left;
+  padding-left: 10px;
+}
+
+
+.cardPick {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0 15px 0;
+  background-color: #FFF;
+  overflow: auto;
+  color: #0F1111;
+  width: 350px;
+}
+
 
 
 .App-link {

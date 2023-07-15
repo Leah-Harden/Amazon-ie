@@ -14,10 +14,10 @@ function Home() {
     return (
         <>
             <Navindex />
-            <div>
+            <div className='homePageWidth'>
                 <CarouselHome />
-                <div>
-                    <h3>Pick up where you left off</h3>
+                <div className='cardPick'>
+                    <h5 className='cardTitle'>Pick up where you left off</h5>
                     <div>
                         <img src={tea} alt='' />
                         <img src={tayors} alt='' />

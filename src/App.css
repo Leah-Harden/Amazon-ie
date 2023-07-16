@@ -153,7 +153,7 @@
 
 .homePageWidth {
   margin-left: 200px;
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -172,7 +172,7 @@
   margin-bottom: 20px;
   padding: 20px 0 15px 0;
   background-color: #FFF;
-  overflow: auto;
+
   color: #0F1111;
   width: 350px;
   margin: 10px 10px 10px 10px;
@@ -186,13 +186,37 @@
 
 .cardGrid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px;
 }
 
 
+.photoPick {
+  width: 145px;
+  height: 145px;
+
+
+
+}
+
+.titleHere {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.viewHere {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
 
 .cardView {
   display: flex;
   flex-direction: column;
+
+
 }
 
 

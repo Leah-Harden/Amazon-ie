@@ -160,11 +160,11 @@
 
 /* card */
 
-.cardTitle {
-  font-weight: 700;
-  float: left;
-  padding-left: 10px;
+.cardRow {
+  display: flex;
+  flex-direction: row;
 }
+
 
 
 .cardPick {
@@ -175,8 +175,25 @@
   overflow: auto;
   color: #0F1111;
   width: 350px;
+  margin: 10px 10px 10px 10px;
+
 }
 
+.cardTitle {
+  font-weight: 700;
+
+}
+
+.cardGrid {
+  display: grid;
+}
+
+
+
+.cardView {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .App-link {

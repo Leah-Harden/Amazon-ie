@@ -4,13 +4,12 @@ import * as React from 'react';
 
 import Navindex from '../Nav/Navindex.js'
 import CarouselHome from './CarouselHome.js';
-
-import cardPick from './Cards/cardPick.js';
-
+import cardPickOff from './Cards/cardPickOff.js';
 
 
-import tea from './CardPhotos/tea.png';
-import tayors from './CardPhotos/tayors.png';
+
+import tea from './Cards/CardPhotos/tea.png';
+import tayors from './Cards/CardPhotos/tayors.png';
 
 function Home() {
 
@@ -21,8 +20,7 @@ function Home() {
                 <CarouselHome />
                 <div className='cardRow'>
 
-                    <cardPick />
-
+                    <cardPickOff />
 
                     <div className='cardPick'>
                         <h5 className='cardTitle'>Keep shopping for</h5>

@@ -4,8 +4,8 @@ import * as React from 'react';
 
 import Navindex from '../Nav/Navindex.js'
 import CarouselHome from './CarouselHome.js';
-import cardPickOff from './Cards/cardPickOff.js';
-
+import CardPickOff from './Cards/CardPickOff.js';
+import CardShopping from './Cards/CardShopping.js';
 
 
 import tea from './Cards/CardPhotos/tea.png';
@@ -20,34 +20,9 @@ function Home() {
                 <CarouselHome />
                 <div className='cardRow'>
 
-                    <cardPickOff />
+                    <CardPickOff />
 
-                    <div className='cardPick'>
-                        <h5 className='cardTitle'>Keep shopping for</h5>
-                        <div className='cardGrid'>
-                            <div className='cardView'>
-                                <img src={tea} alt='' className='photoPick' />
-                                <h6 className='titleHere'>Titlehere</h6>
-                                <h6 className='viewHere'><span>2</span> viewed</h6>
-                            </div>
-                            <div className='cardView'>
-                                <img src={tayors} alt='' className='photoPick' />
-                                <h6 className='titleHere'>Titlehere</h6>
-                                <h6 className='viewHere'><span>2</span> viewed</h6>
-                            </div>
-                            <div className='cardView'>
-                                <img src={tea} alt='' className='photoPick' />
-                                <h6 className='titleHere'>Titlehere</h6>
-                                <h6 className='viewHere'><span>2</span> viewed</h6>
-                            </div>
-                            <div className='cardView'>
-                                <img src={tayors} alt='' className='photoPick' />
-                                <h6 className='titleHere'>Titlehere</h6>
-                                <h6 className='viewHere'><span>2</span> viewed</h6>
-                            </div>
-                        </div>
-                        <a href='#'>View your browsing history</a>
-                    </div>
+                    <CardShopping />
 
 
                     <div className='cardPick'>

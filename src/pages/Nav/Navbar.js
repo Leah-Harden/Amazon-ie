@@ -2,13 +2,12 @@
 import * as React from 'react';
 
 
-import InputLabel from '@mui/material/InputLabel';
+
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+
 
 import Autocomplete from '@mui/material/Autocomplete';
 
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
@@ -45,9 +44,15 @@ function Nav() {
                 <img src={Logo} alt="Logo" className='Logo' />
                 <button className='SearchBarNavBtn rowLocation'>
                     <PinDropOutlinedIcon />
-                    <p className='ColButton'>
-                        Deliver to <span>John</span> <h6>Olrando 32809</h6>
-                    </p>
+
+                    <div>
+
+                        <p className='Colbotton'>
+                            Deliver to <span>John</span>
+                        </p>
+                        <h6 className='btnBold'>Olrando 32809</h6>
+                    </div>
+
                 </button>
 
 

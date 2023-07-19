@@ -25,10 +25,8 @@ function Nav() {
                     <button size="small" className='BtnBottomNav'>Shop By Interest</button>
                     <button size="small" className='BtnBottomNav'>Home Improvement</button>
                     <button size="small" className='BtnBottomNav'>Amazon Home</button>
-                    <button size="small" className='BtnBottomNav'>Find a Gift</button>
-                    <button size="small" className='BtnBottomNav'>Handmade</button>
-
                 </div>
+                <button size="small" className='BtnBottomNav'>Up to 50% overstock deals</button>
 
             </div>
 

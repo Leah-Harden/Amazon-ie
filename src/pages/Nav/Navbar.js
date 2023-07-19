@@ -1,7 +1,6 @@
 
-import * as React from 'react';
 
-
+import React, { useState } from 'react';
 
 import FormControl from '@mui/material/FormControl';
 
@@ -11,14 +10,45 @@ import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 
+
+// icons
 import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
 import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import SearchIcon from '@mui/icons-material/Search';
+
 
 import Logo from './NavPhotos/Logo.png'
 
 function Nav() {
-    const options = ['The Godfather', 'Pulp Fiction'];
+    const autocompleteData = [
+        'Apple',
+        'Banana',
+        'Cherry',
+        'Grapes',
+        'Orange',
+        'Pineapple',
+        'Strawberry',
+    ];
+
+    const [value, setValue] = useState('');
+    const [filteredData, setFilteredData] = useState([]);
+
+    const handleChange = (e) => {
+        const inputValue = e.target.value;
+        setValue(inputValue);
+
+        const filteredOptions = autocompleteData.filter((option) =>
+            option.toLowerCase().includes(inputValue.toLowerCase())
+        );
+
+        setFilteredData(filteredOptions);
+    };
+
+    const handleSelect = (value) => {
+        setValue(value);
+        setFilteredData([]);
+    };
 
     const currencies = [
         {
@@ -74,12 +104,28 @@ function Nav() {
                         </TextField>
 
                     </FormControl>
-                    <Autocomplete
-                        disablePortal
-                        options={options}
-                        className='SearchBarNav'
-                        renderInput={(params) => <TextField {...params} />}
-                    />
+                    <div>
+                        <input
+                            className='searchInput'
+                            type="text"
+                            value={value}
+                            onChange={handleChange}
+                            placeholder="Type to autocomplete..."
+                        />
+                        {filteredData.length > 0 && (
+                            <ul className='ulNavBar'>
+                                {filteredData.map((option) => (
+                                    <li className='liNavBar'
+                                        key={option} onClick={() => handleSelect(option)}>
+                                        {option}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                    <button className='orangeBtn'>
+                        <SearchIcon />
+                    </button>
                 </div>
 
                 <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>

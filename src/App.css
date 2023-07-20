@@ -18,15 +18,106 @@
 
 }
 
+.colLogoDiv {
+  display: flex;
+}
+
 
 .Navbar {
   background-color: #131921;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0px 10px 0px 10px;
   align-items: center;
   height: 60px;
+
 }
+
+
+
+
+
+/* This is .Search */
+.SearchBarNavAll {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  width: max-content;
+}
+
+
+
+
+/* 
+this is the searchbar 
+*/
+.AllSearchBar {}
+
+
+/* AutocompleteBar styles */
+
+.autocomplete-wrapper {
+  position: relative;
+}
+
+.autocomplete-input {
+  width: 900px;
+  padding: 5px;
+
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 150px;
+  /* Set a fixed or max height for the dropdown */
+  overflow-y: auto;
+  /* Enable vertical scrolling if needed */
+  z-index: 999;
+  /* Set a higher z-index value to place it on top */
+}
+
+.autocomplete-option {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.SearchBarNav {
+  background-color: white;
+  color: #111;
+  width: 85%;
+  line-height: 15px;
+
+  padding: 0px 10px 10px 0px;
+  border: 0;
+  height: 38px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: 0;
+  box-shadow: none;
+  text-indent: 8px;
+
+}
+
+.orangeBtn {
+  padding: 6px;
+  background-color: #febd69;
+
+}
+
+/* This is .Search */
+
 
 /* 
 this is all the top buttons */
@@ -80,86 +171,8 @@ this is all the top buttons bold parts */
   border: 1px solid #cdcdcd;
 }
 
-
-/* This is .Search */
-.SearchBarNavAll {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex: 1 1 auto;
-  border-radius: 10px;
-}
-
-
-/* 
-this is the searchbar */
-
-.AllSearchBar {
-  justify-content: center;
-  box-shadow: none;
-  padding: 10px 4px 10px 3px;
-
-}
-
-
-/* AutocompleteBar styles */
-.searchInput {
-  width: 300px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.ulNavBar {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  max-height: 150px;
-  /* Set a fixed or max height for the dropdown */
-  overflow-y: auto;
-  /* Enable vertical scrolling if needed */
-}
-
-.liNavBar {
-  padding: 5px;
-  cursor: pointer;
-  border-bottom: 1px solid #ccc;
-}
-
-
-.SearchBarNav {
-  background-color: white;
-  color: #111;
-  width: 85%;
-  line-height: 15px;
-
-  padding: 0px 10px 10px 0px;
-  border: 0;
-  height: 38px;
-  font-family: inherit;
-  font-size: 15px;
-  outline: 0;
-  box-shadow: none;
-  text-indent: 8px;
-
-}
-
-.orangeBtn {
-  padding: 7px;
-  background-color: #febd69;
-
-}
-
-/* This is .Search */
-
-/* BottomNav */
 .rowbottomNav {
+  /* BottomNav */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

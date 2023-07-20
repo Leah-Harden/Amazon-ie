@@ -12,18 +12,13 @@ const AutocompleteBar = () => {
         'Strawberry',
     ];
 
-    // State to hold the current value of the input field
     const [value, setValue] = useState('');
-
-    // State to hold the filtered autocomplete options
     const [filteredData, setFilteredData] = useState([]);
 
-    // Function to handle changes to the input field
     const handleChange = (e) => {
         const inputValue = e.target.value;
         setValue(inputValue);
 
-        // Filter the autocomplete options based on the input value
         const filteredOptions = autocompleteData.filter((option) =>
             option.toLowerCase().includes(inputValue.toLowerCase())
         );
@@ -31,24 +26,29 @@ const AutocompleteBar = () => {
         setFilteredData(filteredOptions);
     };
 
-    // Function to handle selecting an option from the autocomplete list
     const handleSelect = (value) => {
         setValue(value);
-        setFilteredData([]); // Clear the filtered options after selection if you want
+        setFilteredData([]);
     };
 
+
     return (
-        <div>
+        <div className="autocomplete-wrapper">
             <input
                 type="text"
                 value={value}
                 onChange={handleChange}
                 placeholder="Type to autocomplete..."
+                className="autocomplete-input"
             />
             {filteredData.length > 0 && (
-                <ul>
+                <ul className="autocomplete-dropdown">
                     {filteredData.map((option) => (
-                        <li key={option} onClick={() => handleSelect(option)}>
+                        <li
+                            key={option}
+                            onClick={() => handleSelect(option)}
+                            className="autocomplete-option"
+                        >
                             {option}
                         </li>
                     ))}

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import FormControl from '@mui/material/FormControl';
 
 
-import Autocomplete from '@mui/material/Autocomplete';
+import Autocomplete from './AutocompleteBar.js';
 
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
@@ -21,35 +21,6 @@ import SearchIcon from '@mui/icons-material/Search';
 import Logo from './NavPhotos/Logo.png'
 
 function Nav() {
-    const autocompleteData = [
-        'Apple',
-        'Banana',
-        'Cherry',
-        'Grapes',
-        'Orange',
-        'Pineapple',
-        'Strawberry',
-    ];
-
-    const [value, setValue] = useState('');
-    const [filteredData, setFilteredData] = useState([]);
-
-    const handleChange = (e) => {
-        const inputValue = e.target.value;
-        setValue(inputValue);
-
-        const filteredOptions = autocompleteData.filter((option) =>
-            option.toLowerCase().includes(inputValue.toLowerCase())
-        );
-
-        setFilteredData(filteredOptions);
-    };
-
-    const handleSelect = (value) => {
-        setValue(value);
-        setFilteredData([]);
-    };
-
     const currencies = [
         {
             value: 'EUR',
@@ -71,19 +42,22 @@ function Nav() {
     return (
         <>
             <div className='Navbar'>
-                <img src={Logo} alt="Logo" className='Logo' />
-                <button className='SearchBarNavBtn rowLocation'>
-                    <PinDropOutlinedIcon />
+                <div className='colLogoDiv'>
 
-                    <div>
+                    <img src={Logo} alt="Logo" className='Logo' />
+                    <button className='SearchBarNavBtn rowLocation'>
+                        <PinDropOutlinedIcon />
 
-                        <p className='Colbotton'>
-                            Deliver to <span>John</span>
-                        </p>
-                        <h6 className='btnBold'>Olrando 32809</h6>
-                    </div>
+                        <div>
 
-                </button>
+                            <p className='Colbotton'>
+                                Deliver to <span>John</span>
+                            </p>
+                            <h6 className='btnBold'>Olrando 32809</h6>
+                        </div>
+
+                    </button>
+                </div>
 
 
                 <div className='SearchBarNavAll'>
@@ -104,35 +78,19 @@ function Nav() {
                         </TextField>
 
                     </FormControl>
-                    <div>
-                        <input
-                            className='searchInput'
-                            type="text"
-                            value={value}
-                            onChange={handleChange}
-                            placeholder="Type to autocomplete..."
-                        />
-                        {filteredData.length > 0 && (
-                            <ul className='ulNavBar'>
-                                {filteredData.map((option) => (
-                                    <li className='liNavBar'
-                                        key={option} onClick={() => handleSelect(option)}>
-                                        {option}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </div>
+                    <Autocomplete />
                     <button className='orangeBtn'>
                         <SearchIcon />
                     </button>
                 </div>
+                <div>
 
-                <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>
-                <button className='SearchBarNavBtn' >Hello, John <h6 className='btnBold'>Account & Lists</h6></button>
-                <button className='SearchBarNavBtn '>Returns<h6 className='btnBold'>& Orders</h6></button>
-                <button className='SearchBarNavBtn ' ><h6 className='btnBold'>< ShoppingCartOutlinedIcon />Cart</h6></button>
+                    <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>
+                    <button className='SearchBarNavBtn' >Hello, John <h6 className='btnBold'>Account & Lists</h6></button>
+                    <button className='SearchBarNavBtn '>Returns<h6 className='btnBold'>& Orders</h6></button>
+                    <button className='SearchBarNavBtn ' ><h6 className='btnBold'>< ShoppingCartOutlinedIcon />Cart</h6></button>
 
+                </div>
             </div>
 
         </>

@@ -50,7 +50,7 @@ function Nav() {
 
                         <div>
 
-                            <p className='Colbotton'>
+                            <p className='ColButton'>
                                 Deliver to <span>John</span>
                             </p>
                             <h6 className='btnBold'>Olrando 32809</h6>
@@ -83,12 +83,21 @@ function Nav() {
                         <SearchIcon />
                     </button>
                 </div>
-                <div>
 
+
+                <div className='rowBtn'>
                     <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>
-                    <button className='SearchBarNavBtn' >Hello, John <h6 className='btnBold'>Account & Lists</h6></button>
-                    <button className='SearchBarNavBtn '>Returns<h6 className='btnBold'>& Orders</h6></button>
-                    <button className='SearchBarNavBtn ' ><h6 className='btnBold'>< ShoppingCartOutlinedIcon />Cart</h6></button>
+                    <button className='SearchBarNavBtn' >
+                        <div>
+                            Hello, John <h6 className='btnBold'>Account & Lists</h6>
+                        </div>
+                    </button>
+                    <button className='SearchBarNavBtn '>
+                        <div>
+                            Returns<h6 className='btnBold'>& Orders</h6>
+                        </div>
+                    </button>
+                    <button className='SearchBarNavBtn shoppingCartBtn' ><h6 className='btnBold'>< ShoppingCartOutlinedIcon />Cart</h6></button>
 
                 </div>
             </div>

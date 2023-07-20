@@ -119,15 +119,23 @@ this is the searchbar
 /* This is .Search */
 
 
+.rowBtn {
+  display: flex;
+}
+
 /* 
 this is all the top buttons */
 .SearchBarNavBtn {
   background-color: #131921;
   border: none;
   color: white;
-  padding: 0px 12px 0px 12px;
+  padding: 10px 12px 0px 12px;
   font-size: 11px;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* 
@@ -212,7 +220,6 @@ this is all the top buttons bold parts */
   font-family: 'Rubik', sans-serif;
 
 }
-
 
 
 

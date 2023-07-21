@@ -11,6 +11,12 @@ import CardShopping from './Cards/CardShopping.js';
 import tea from './Cards/CardPhotos/tea.png';
 import tayors from './Cards/CardPhotos/tayors.png';
 
+import FitBit from './HomePhotos/FitBit.png';
+import Ad from './HomePhotos/Ad.png';
+
+
+
+import PendingIcon from '@mui/icons-material/Pending';
 function Home() {
 
     return (
@@ -36,7 +42,29 @@ function Home() {
                         <p className='titleHere'>Shop your everyday essentials</p>
                         <a href='#'>See more</a>
                     </div>
+                    <div className='colAds'>
+
+                        <div className='fitBitAd'>
+                            <div>
+
+                                <h3>Shop Fitbit Versa 4 with Alexa Built-in</h3>
+                                <a href='#'>Explore more</a>
+                            </div>
+                            <img className="" src={FitBit} alt="First slide" />
+                        </div>
+                        <div>
+                            <img className="" src={Ad} alt="First slide" />
+                            <div>
+                                <p>Sponsored</p>
+                                <PendingIcon />
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
+
+
             </div>
         </>
 

@@ -295,6 +295,19 @@ this is all the top buttons bold parts */
 
 }
 
+.fitBitAd {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0 15px 0;
+  background-color: #FFF;
+
+  color: #0F1111;
+  width: 350px;
+  margin: 10px 10px 10px 10px;
+}
+
+
+
 
 .App-link {
   color: #61dafb;

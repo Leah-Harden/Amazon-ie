@@ -45,16 +45,18 @@ function Home() {
                     <div className='colAds'>
 
                         <div className='fitBitAd'>
-                            <div>
+                            <div className='fitBitTextAll'>
 
-                                <h3>Shop Fitbit Versa 4 with Alexa Built-in</h3>
+                                <h3 className='fitBitText'>Shop Fitbit Versa 4 with Alexa Built-in</h3>
                                 <a href='#'>Explore more</a>
                             </div>
                             <img className="" src={FitBit} alt="First slide" />
                         </div>
-                        <div>
-                            <img className="" src={Ad} alt="First slide" />
-                            <div>
+
+
+                        <div className='vacAdAll'>
+                            <img className="vacAd" src={Ad} alt="First slide" />
+                            <div className='vacAdTextAll'>
                                 <p>Sponsored</p>
                                 <PendingIcon />
                             </div>

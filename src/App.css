@@ -300,13 +300,35 @@ this is all the top buttons bold parts */
   margin-bottom: 20px;
   padding: 20px 0 15px 0;
   background-color: #FFF;
-
   color: #0F1111;
   width: 350px;
+  height: 140px;
   margin: 10px 10px 10px 10px;
+  display: flex;
+  padding: 10px;
 }
 
+.fitBitTextAll {
+  text-align: left;
+  padding: 12px;
+}
 
+.fitBitText {
+  font-size: 18px;
+  font-weight: 800px;
+}
+
+.vacAdAll {}
+
+.vacAd {
+  border: black 1px solid;
+}
+
+.vacAdTextAll {
+  display: flex;
+  justify-content: end;
+  font-size: 11px;
+}
 
 
 .App-link {

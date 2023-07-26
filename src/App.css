@@ -257,6 +257,9 @@ this is all the top buttons bold parts */
 
 .cardTitle {
   font-weight: 700;
+  text-align: left;
+  padding-left: 20px;
+
 
 }
 
@@ -268,11 +271,15 @@ this is all the top buttons bold parts */
 }
 
 
+.photoPickUp {
+  width: 145px;
+  height: 165px;
+
+}
+
 .photoPick {
   width: 145px;
   height: 145px;
-
-
 
 }
 
@@ -291,8 +298,19 @@ this is all the top buttons bold parts */
 .cardView {
   display: flex;
   flex-direction: column;
+  text-align: left;
 
 
+}
+
+
+/* colAds */
+
+.colAds {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 }
 
 .fitBitAd {
@@ -318,7 +336,10 @@ this is all the top buttons bold parts */
   font-weight: 800px;
 }
 
-.vacAdAll {}
+.vacAdAll {
+  width: 300px;
+  margin: 20px;
+}
 
 .vacAd {
   border: black 1px solid;
@@ -330,6 +351,11 @@ this is all the top buttons bold parts */
   font-size: 11px;
 }
 
+
+
+.pendingIcon {
+  font-size: small;
+}
 
 .App-link {
   color: #61dafb;

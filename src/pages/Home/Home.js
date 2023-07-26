@@ -58,7 +58,7 @@ function Home() {
                             <img className="vacAd" src={Ad} alt="First slide" />
                             <div className='vacAdTextAll'>
                                 <p>Sponsored</p>
-                                <PendingIcon />
+                                <PendingIcon className='pendingIcon' />
                             </div>
                         </div>
 

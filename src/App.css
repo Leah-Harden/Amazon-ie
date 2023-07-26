@@ -352,10 +352,39 @@ this is all the top buttons bold parts */
 }
 
 
-
-.pendingIcon {
-  font-size: small;
+.movieAdAll {
+  display: flex;
+  margin: 10px;
 }
+
+.movieAd {
+  width: 720px;
+}
+
+.topTextPrettyAdAll {
+  color: white;
+  position: absolute;
+  text-align: left;
+  margin: 20px;
+
+}
+
+.topTextTopPretty {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.topTextBottomPretty {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bottomTextPrettyAll {
+  color: white;
+
+}
+
+
 
 .App-link {
   color: #61dafb;

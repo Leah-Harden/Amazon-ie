@@ -14,7 +14,7 @@ import tayors from './Cards/CardPhotos/tayors.png';
 import FitBit from './HomePhotos/FitBit.png';
 import Ad from './HomePhotos/Ad.png';
 
-
+import Pretty from './HomePhotos/Pretty.png';
 
 import PendingIcon from '@mui/icons-material/Pending';
 function Home() {
@@ -58,16 +58,31 @@ function Home() {
                             <img className="vacAd" src={Ad} alt="First slide" />
                             <div className='vacAdTextAll'>
                                 <p>Sponsored</p>
-                                <PendingIcon className='pendingIcon' />
+                                <PendingIcon fontSize="small" className='pendingIcon' />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className='movieAdAll'>
 
+                    <div className='topTextPrettyAdAll'>
+
+                        <h2 className='topTextTopPretty'>Video: Recommended for you</h2>
+                        <h3 className='topTextBottomPretty'>The Summer I Turned Pretty - Season 1</h3>
                     </div>
 
+                    <img className="movieAd" src={Pretty} alt="First slide" />
+                    {/* <div className='bottomTextPrettyAll'>
+
+                        <a href='#' alt='Start watching'>Start watching</a>
+                        <button>Add to Watchlist</button>
+                    </div> */}
+
                 </div>
-
-
             </div>
+
+
+
         </>
 
     );

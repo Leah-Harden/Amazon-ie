@@ -63,26 +63,53 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='movieAdAll'>
 
-                    <div className='topTextPrettyAdAll'>
 
-                        <h2 className='topTextTopPretty'>Video: Recommended for you</h2>
-                        <h3 className='topTextBottomPretty'>The Summer I Turned Pretty - Season 1</h3>
-                    </div>
+                {/* next row */}
 
-                    <img className="movieAd" src={Pretty} alt="First slide" />
-                    {/* <div className='bottomTextPrettyAll'>
+                <div className='cardRow'>
+
+                    <div className='movieAdAll'>
+
+                        <div className='topTextPrettyAdAll'>
+
+                            <h2 className='topTextTopPretty'>Video: Recommended for you</h2>
+                            <h3 className='topTextBottomPretty'>The Summer I Turned Pretty - Season 1</h3>
+                        </div>
+
+                        <img className="movieAd" src={Pretty} alt="First slide" />
+                        {/* <div className='bottomTextPrettyAll'>
 
                         <a href='#' alt='Start watching'>Start watching</a>
                         <button>Add to Watchlist</button>
                     </div> */}
+                    </div>
 
+
+                    <div>
+                        <h2>Top Deal</h2>
+                        <img className="vacAd" src={Ad} alt="First slide" />
+                        <div>
+                            <div>
+                                <p><span>45</span>% off</p>
+                                <div>Top deal</div>
+                            </div>
+                            <div>
+                                <h6>$103.99</h6><p>List Price: <span>189.99</span></p>
+                            </div>
+                            <p>Mimoglad Ergonomic Chairs</p>
+                        </div>
+                        <a href='#'>See all deals</a>
+                    </div>
+
+                    <div>
+                        <h3>Get Valorant content with Prime</h3>
+                        <img className="vacAd" src={Ad} alt="First slide" />
+                        <a href='#'>Claim with Prime</a>
+                    </div>
                 </div>
+
             </div>
-
-
-
         </>
 
     );

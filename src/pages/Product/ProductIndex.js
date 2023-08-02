@@ -28,8 +28,17 @@ function ProductIndex() {
                         <a href='#'> <span>2,234</span>rating</a>
                         <a href='#'><span>13</span>anwered questions</a>
                     </div>
-                    <img src={#} alt='' />
                     <hr></hr>
+                    <div>
+                        <p>List Price:<span>$24.99</span><a href='#'>Details</a> </p>
+                        <p>Price:<span>16.99</span>  <img src={#} alt='' /><span>One-day</span></p>
+                        <a href='#'>Free Returns</a>
+                        <p>You Save:<span>$8.00 (32%)</span></p>
+                        <img src={#} alt='' /> <a>Shop items </a> <a>Terms</a>
+                        <a><span>Get a $100 Gift Card:</span> Pay $0.00 $16.99 upon approval for Prime Visa. No annual fee.</a>
+                        <p>May be available at a lower price from other sellers, potentially without free Prime shipping.</p>
+                        <p>Size:<span>Pack of 6</span> </p>
+                    </div>
                 </div>
 
             </div>

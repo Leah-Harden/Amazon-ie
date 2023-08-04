@@ -384,6 +384,32 @@ this is all the top buttons bold parts */
 
 }
 
+/* 
+    Product page 
+*/
+
+
+
+.productWholePage {
+  margin: 0px 200px 0px 200px;
+}
+
+
+.PhotoPlusText {
+  text-align: left;
+}
+
+
+.wholeProductRow {
+  display: flex;
+}
+
+
+.sidePhotoLine {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .App-link {

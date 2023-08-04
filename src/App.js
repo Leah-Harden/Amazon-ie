@@ -1,5 +1,12 @@
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //adds CSS
 import './Reset.css';
@@ -9,7 +16,7 @@ import './App.css';
 
 
 import Home from './pages/Home/Home.js';
-
+import Product from './pages/Product/ProductIndex.js';
 
 
 
@@ -22,6 +29,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/product" element={<Product />} />
 
 
           </Routes>

@@ -15,11 +15,11 @@ function CardPickOff({ one, two, three, four }) {
             <div>{[one, two, three, four]}</div>
             <h5 className='cardTitle'>Pick up where you left off</h5>
             <div className='cardGrid'>
-                <div className='cardView'>
+                <a className='cardView' href='/product'>
                     <img src={Kid} alt='' className='photoPickUp' />
                     <h6 className='titleHere'>The Kid:A Novel</h6>
 
-                </div>
+                </a>
                 <div className='cardView'>
                     <img src={Lost} alt='' className='photoPickUp' />
                     <h6 className='titleHere'>Paradise Lost</h6>

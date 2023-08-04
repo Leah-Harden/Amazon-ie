@@ -392,6 +392,7 @@ this is all the top buttons bold parts */
 
 .productWholePage {
   margin: 0px 200px 0px 200px;
+  display: flex;
 }
 
 
@@ -412,6 +413,37 @@ this is all the top buttons bold parts */
 }
 
 
-.App-link {
+.SidePhoto {
+  margin: 8px;
+  width: 60px;
+  height: 70px;
+  border: rgb(133, 133, 133) 1px solid;
+  border-radius: 10px;
+}
+
+.MainProductPhoto {
+  width: 400px;
+}
+
+
+.ProductText {
+  text-align: left;
+  margin: 30px;
+}
+
+.ProductTitle {
+  font-size: 28px;
+}
+
+.RatingLine {
+  display: flex;
+}
+
+.RatingSpace {
+  margin: 5px 10px 0px 10px;
+}
+
+
+.PriceText .App-link {
   color: #61dafb;
 }

@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "john_doe",
+            "email": "john.doe@example.com",
+            "age": 28,
+            "is_active": true
+        },
+        {
+            "id": 2,
+            "username": "jane_smith",
+            "email": "jane.smith@example.com",
+            "age": 24,
+            "is_active": false
+        },
+        {
+            "id": 3,
+            "username": "mike_jackson",
+            "email": "mike.jackson@example.com",
+            "age": 32,
+            "is_active": true
+        },
+        {
+            "id": 4,
+            "username": "emily_wilson",
+            "email": "emily.wilson@example.com",
+            "age": 22,
+            "is_active": true
+        }
+    ]
+}

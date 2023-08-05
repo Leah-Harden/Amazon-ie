@@ -38,7 +38,7 @@ function ProductIndex() {
                         <di className="RatingLine">
                             <p className='RatingSpace'><span>4.8</span> </p>
                             <a href='#' className='RatingSpace'> <span>2,234</span>&nbsp;ratings</a>
-                            <a href='#' className='RatingSpace'><span>13</span>&nbsp;anwered questions</a>
+                            <a href='#' className='RatingSpace'><span>13</span>&nbsp;answered questions</a>
                         </di>
                         <hr></hr>
                         <div>

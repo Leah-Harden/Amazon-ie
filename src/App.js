@@ -17,7 +17,7 @@ import './App.css';
 
 import Home from './pages/Home/Home.js';
 import Product from './pages/Product/ProductIndex.js';
-import SignUp from './pages/Product/SignUpIndex.js';
+import SignUp from './pages/Signup/SignUpIndex.js';
 
 
 

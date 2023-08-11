@@ -1,6 +1,7 @@
 
 
-import Placeholder from '../Home/Cards/CardPhotos/Kid.png'
+
+
 
 import React, { useState } from 'react';
 

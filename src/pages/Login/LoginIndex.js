@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import Footer from './Footer';
 
 
-import LogoW from '.LogoW.png'
+import LogoW from './LogoW.png';
 
 
 function LoginIndex() {
@@ -35,7 +35,7 @@ function LoginIndex() {
     return (
         <>
             <div className='LoginCol'>
-
+                <img src={LogoW} className='' alt='Logo' />
                 <div className='LoginBox'>
                     <h1>Sign in</h1>
                     <form>

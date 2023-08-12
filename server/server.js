@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 });
 
 
-////////////////////// stripe
+////////////////////// stripe does not work
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())

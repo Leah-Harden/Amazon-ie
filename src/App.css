@@ -462,6 +462,25 @@ this is all the top buttons bold parts */
   color: #61dafb;
 }
 
+.LoginCol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.LoginBox {
+  background-color: white;
+  border: rgb(172, 172, 172) 1px solid;
+  border-radius: 10px;
+  width: 350px;
+  text-align: left;
+  padding: 5px;
+
+}
+
+
 
 .FooterA {
   color: #3f43bc;

@@ -8,6 +8,9 @@ import React, { useState } from 'react';
 import Footer from './Footer';
 
 
+import LogoW from '.LogoW.png'
+
+
 function LoginIndex() {
 
     const [formData, setFormData] = useState({
@@ -31,30 +34,33 @@ function LoginIndex() {
 
     return (
         <>
-            <div>
-                <h1>Sign in</h1>
-                <form>
+            <div className='LoginCol'>
 
-                    <label>Type Email</label>
-                    <input
-                        type='email'
-                        id='email'
-                        name='email'
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                    >
-                    </input>
-                    <button>Continue</button>
-                    <p>By continuing, you agree to<a>Amazon's Conditions of Use</a> and <a>Privacy Notice.</a></p>
-                </form>
+                <div className='LoginBox'>
+                    <h1>Sign in</h1>
+                    <form>
+
+                        <label>Type Email</label>
+                        <input
+                            type='email'
+                            id='email'
+                            name='email'
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            required
+                        >
+                        </input>
+                        <button>Continue</button>
+                        <p>By continuing, you agree to<a>Amazon's Conditions of Use</a> and <a>Privacy Notice.</a></p>
+                    </form>
+                </div>
+                <div>
+                    <hr></hr>
+                    <p>New to Amazon?</p>
+                    <hr></hr>
+                </div>
+                <button>Create your Amazon account</button>
             </div>
-            <div>
-                <hr></hr>
-                <p>New to Amazon?</p>
-                <hr></hr>
-            </div>
-            <button>Create your Amazon account</button>
             <Footer />
 
         </>

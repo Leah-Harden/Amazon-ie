@@ -5,7 +5,10 @@
 
 import React, { useState } from 'react';
 
-function SignUpIndex() {
+import Footer from './Footer';
+
+
+function LoginIndex() {
 
     const [formData, setFormData] = useState({
         email: '',
@@ -32,7 +35,7 @@ function SignUpIndex() {
                 <h1>Sign in</h1>
                 <form>
 
-                    <label>Email or mobile phone number</label>
+                    <label>Type Email</label>
                     <input
                         type='email'
                         id='email'
@@ -42,20 +45,17 @@ function SignUpIndex() {
                         required
                     >
                     </input>
-                    <input
-                        type='password'
-                        id='password'
-                        name='password'
-                        value={formData.password}
-                        onChange={handleInputChange}
-                        required
-                    >
-                    </input>
+                    <button>Continue</button>
+                    <p>By continuing, you agree to<a>Amazon's Conditions of Use</a> and <a>Privacy Notice.</a></p>
                 </form>
             </div>
-
-
-
+            <div>
+                <hr></hr>
+                <p>New to Amazon?</p>
+                <hr></hr>
+            </div>
+            <button>Create your Amazon account</button>
+            <Footer />
 
         </>
     )
@@ -63,4 +63,4 @@ function SignUpIndex() {
 
 
 
-export default SignUpIndex;
+export default LoginIndex;

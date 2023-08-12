@@ -88,7 +88,7 @@ function Nav() {
                 <div className='rowBtn'>
                     <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>
                     <button className='SearchBarNavBtn'>
-                        <a href='/signup' className='noneLink'>
+                        <a href='/login' className='noneLink'>
                             Hello, John <h6 className='btnBold'>Account & Lists</h6>
                         </a>
                     </button>

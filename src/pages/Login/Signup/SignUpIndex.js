@@ -3,6 +3,9 @@
 
 
 import React, { useState } from 'react';
+import Footer from '../Footer';
+
+
 
 function SignUpIndex() {
 
@@ -51,6 +54,7 @@ function SignUpIndex() {
                     >
                     </input>
                 </form>
+                <Footer />
             </div>
 
 

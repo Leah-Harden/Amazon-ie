@@ -17,8 +17,8 @@ import './App.css';
 
 import Home from './pages/Home/Home.js';
 import Product from './pages/Product/ProductIndex.js';
-import SignUp from './pages/Signup/SignUpIndex.js';
-
+import SignUp from './pages/Login/Signup/SignUpIndex.js';
+import Login from './pages/Login/LoginIndex.js';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/product" element={<Product />} />
             <Route path="/signup" element={<SignUp />} />
-
+            <Route path="/login" element={<Login />} />
 
           </Routes>
         </div>

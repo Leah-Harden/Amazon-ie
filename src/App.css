@@ -461,3 +461,22 @@ this is all the top buttons bold parts */
 .PriceText .App-link {
   color: #61dafb;
 }
+
+
+.FooterA {
+  color: #3f43bc;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.FooterLinks {
+  margin-bottom: 15px;
+}
+
+.FooterText {
+  font-size: 12px;
+  background-color: #fdfdfd;
+  padding: 20px;
+
+
+}

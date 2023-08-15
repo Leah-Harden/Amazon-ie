@@ -1,43 +1,40 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type Parent {
+  type User {
     _id: ID!
     name: String!
     email: String!
-    savedChildren: [Child]
   }
 
-  type Child {
+  type Product {
     _id: ID!
     name: String!
-    badges: String
-    theme:String
-    grownups: [Parent]!
-    entries: [Entry]
+    price: String!
+
   }
 
   type Auth {
     token: ID!
-    user: Parent
+    user: User
   }
 
   type Query {
-    me: Parent
-    parents: [Parent]
-    parent(_id: ID!): Parent
-    children: [Child]
-    child(_id: ID!): Child
-    entries: [Entry]
+    me: User
+    user: [User]
+    user(_id: ID!): User
+    product: [Product]
+    product(_id: ID!): Product
+
   }
+
 
   type Mutation {
     addUser(name: String!, email: String!, password: String!): Auth
-    addEntry(ChildId: String!, mood: String!, responseOne: String): Entry
-    deleteEntry(_id: ID!): Entry
+# dont know about the password part 0-o    
     login(email: String!, password: String!): Auth
-    createChild(name: String!, badges: String, theme: String, grownups: [String]): Child
-    updateEntry(_id: ID!, mood: String, responseOne: String): Entry
+    createProduct(name: String!price: String!): Product
+
   }
 `;
 

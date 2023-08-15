@@ -1,28 +1,30 @@
 const db = require('../config/connection');
-const { Parent } = require('../models');
+const Product = require('../models/Product.js');
+const User = require('../models/User.js');
 const bcrypt = require('bcrypt');
-const parentData = require('./parentSeed.json');
-const childData = require('./childrenSeed.json');
+const productData = require('./productSeed.json');
+const userData = require('./userSeed.json');
 
 
 db.once('open', async () => {
-  await Parent.deleteMany({});
-  await Child.deleteMany({});
-  
-  // Iterate over the parentData and hash the passwords before saving them
-  const parents = await Promise.all(parentData.map(async (parent) => {
-    const hashedPassword = await bcrypt.hash(parent.password, 10);
+  await User.deleteMany({});
+  await Product.deleteMany({});
+
+  // Iterate over the parentData and hash the passwords before seeded them 
+  const users = await Promise.all(userData.map(async (user) => {
+    const hashedPassword = await bcrypt.hash(user.password, 10);
     return {
-      ...parent,
+      ...user,
       password: hashedPassword
     };
   }));
 
-  await Parent.insertMany(parents);
-  console.log('Parents seeded!');
+  //this seeded all the data and console log it back!
+  await User.insertMany(users);
+  console.log('users seeded!');
 
-  await Child.insertMany(childData);
-  console.log('Children Seeded!');
+  await Product.insertMany(productData);
+  console.log('products Seeded!');
 
   process.exit(0);
 });

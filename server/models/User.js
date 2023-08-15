@@ -17,10 +17,6 @@ const userSchema = new Schema({
         unique: true,
         match: [/.+@.+\..+/, 'Must use a valid email address'],
     },
-    // dont know if this is needed
-    grownups: [{
-        type: Schema.Types.ObjectId, ref: 'Parent'
-    }],
 },
     {
         timestamps: true

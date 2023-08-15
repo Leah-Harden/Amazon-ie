@@ -1,40 +1,52 @@
 const { Schema, model } = require('mongoose');
+const bcrypt = require('bcrypt');
 
-const Parent = require('./Product');
-
-const childSchema = new Schema({
+const userSchema = new Schema({
     name: {
         type: String,
         required: true,
     },
-    badges:
-    {
+    password: {
         type: String,
-    }
-    ,
-    // we can add favorite color and theme later!
-    theme: {
+        required: true,
+        unique: true,
+    },
+    email: {
         type: String,
+        required: true,
+        unique: true,
+        match: [/.+@.+\..+/, 'Must use a valid email address'],
     },
     // dont know if this is needed
     grownups: [{
         type: Schema.Types.ObjectId, ref: 'Parent'
     }],
-
-    entries: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'Entries'
-        }
-    ]
-
 },
     {
         timestamps: true
     }
 );
 
-const Child = model('Child', childSchema);
 
-module.exports = Child;
+// hash user password
+userSchema.pre('save', async function (next) {
+    if (this.isNew || this.isModified('password')) {
+        const saltRounds = 10;
+        this.password = await bcrypt.hash(this.password, saltRounds);
+    }
+
+    next();
+});
+
+
+// custom method to compare and validate password for logging in
+userSchema.methods.isCorrectPassword = async function (password) {
+    return bcrypt.compare(password, this.password);
+};
+
+
+
+const User = model('User', userSchema);
+
+module.exports = User;
 

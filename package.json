@@ -5,21 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd src && npm start\"",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "start": "node server/server.js",
-    "install": "cd src && npm i && cd ../src && npm i",
-    "build": "cd src && npm run build"
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qaizen/curious-chronicles"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HeadbandDandy/apeClub/issues"
-  },
-  "homepage": "https://github.com/Qaizen/curious-chronicles",
+  "homepage": "",
   "dependencies": {
     "concurrently": "7.5.0",
     "dotenv": "^16.1.3",

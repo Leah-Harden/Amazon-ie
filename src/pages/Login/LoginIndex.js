@@ -1,8 +1,3 @@
-
-
-
-
-
 import React, { useState } from 'react';
 
 import Footer from './Footer';
@@ -50,8 +45,8 @@ function LoginIndex() {
                             required
                         >
                         </input>
-                        <button>Continue</button>
-                        <p>By continuing, you agree to<a>Amazon's Conditions of Use</a> and <a>Privacy Notice.</a></p>
+                        <input type='submit' onClick={handleSubmit}>Continue</input>
+                        <p>By continuing, you agree to<a href='#'>Amazon's Conditions of Use</a> and <a href='#'>Privacy Notice.</a></p>
                     </form>
                 </div>
                 <div>

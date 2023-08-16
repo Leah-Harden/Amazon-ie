@@ -32,7 +32,7 @@ function SignUpIndex() {
         <>
             <div>
                 <h1>Sign in</h1>
-                <form>
+                <form action='Post'>
 
                     <label>Email or mobile phone number</label>
                     <input

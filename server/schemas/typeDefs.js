@@ -19,13 +19,14 @@ const typeDefs = gql`
     user: User
   }
 
-type Query {
-  me: User
-  users: [User]   # Change the field name from "user" to "users"
-  user(_id: ID!): User
-  products: [Product]   # Change the field name from "product" to "products"
-  product(_id: ID!): Product
-}
+  type Query {
+    me: User
+    user: [User]
+    user(_id: ID!): User
+    product: [Product]
+    product(_id: ID!): Product
+
+  }
 
 
   type Mutation {

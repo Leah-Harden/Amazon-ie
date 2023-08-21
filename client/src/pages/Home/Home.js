@@ -16,7 +16,6 @@ import Ad from './HomePhotos/Ad.png';
 
 import Pretty from './HomePhotos/Pretty.png';
 
-import PendingIcon from '@mui/icons-material/Pending';
 function Home() {
 
     return (
@@ -58,7 +57,7 @@ function Home() {
                             <img className="vacAd" src={Ad} alt="First slide" />
                             <div className='vacAdTextAll'>
                                 <p>Sponsored</p>
-                                <PendingIcon fontSize="small" className='pendingIcon' />
+
                             </div>
                         </div>
                     </div>

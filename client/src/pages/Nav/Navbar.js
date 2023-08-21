@@ -12,10 +12,10 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 // icons
-import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
-import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import SearchIcon from '@mui/icons-material/Search';
+// import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined';
+// import OutlinedFlagIcon from '@mui/icons-material/OutlinedFlag';
+// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+// import SearchIcon from '@mui/icons-material/Search';
 
 
 import Logo from './NavPhotos/Logo.png'
@@ -46,7 +46,7 @@ function Nav() {
 
                     <img src={Logo} alt="Logo" className='Logo' />
                     <button className='SearchBarNavBtn rowLocation'>
-                        <PinDropOutlinedIcon />
+                        {/* <PinDropOutlinedIcon /> */}
 
                         <div>
 
@@ -80,13 +80,15 @@ function Nav() {
                     </FormControl>
                     <Autocomplete />
                     <button className='orangeBtn'>
-                        <SearchIcon />
+                        {/* <SearchIcon /> */}
                     </button>
                 </div>
 
 
                 <div className='rowBtn'>
-                    <button className='SearchBarNavBtn '><OutlinedFlagIcon />EN</button>
+                    <button className='SearchBarNavBtn '>
+                        {/* <OutlinedFlagIcon /> */}
+                        EN</button>
                     <button className='SearchBarNavBtn'>
                         <a href='/login' className='noneLink'>
                             Hello, John <h6 className='btnBold'>Account & Lists</h6>
@@ -97,7 +99,9 @@ function Nav() {
                             Returns<h6 className='btnBold'>& Orders</h6>
                         </div>
                     </button>
-                    <button className='SearchBarNavBtn shoppingCartBtn' ><h6 className='btnBold'>< ShoppingCartOutlinedIcon />Cart</h6></button>
+                    <button className='SearchBarNavBtn shoppingCartBtn' ><h6 className='btnBold'>
+                        {/* < ShoppingCartOutlinedIcon /> */}
+                        Cart</h6></button>
 
                 </div>
             </div>
